@@ -4,6 +4,9 @@ Ce script Python scan le dossier de l'utilisateur (variable ROOT dans config.py)
 
 L'autre action du script est de créer un dictionnaire de hash des fichiers pour ne pas apporter de doublons au dossier cible.
 
-Une autre oeuvre du script consiste à ne pas récupérer les fichiers d'extension inutiles en temps normal (temps, bak etc...)
+Une autre oeuvre du script consiste à ne pas récupérer les fichiers d'extension inutiles en temps normal (temps, bak etc...). Par sécurité, les fichiers de nature inconnu sont récupérés dans le dossiers Divers.
 
-Par sécurité, les fichiers de nature inconnu sont récupérés dans le dossiers Divers
+Le script Orderfolder.py regroupe la plupart des fonctions pour trier, hacher, comparer, créer les dossiers et sous-dossiers du backup.
+Le script app.py est l'application streamlit: un GUI pour choisir d'organiser ou non les fichiers par date de modification et décider de ce qu'il faut ou pas déplacer les fichiers depuis la source plutôt que de le copier
+
+
